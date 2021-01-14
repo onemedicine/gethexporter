@@ -6,9 +6,7 @@ Monitor your Ethereum Geth server with Prometheus and Grafana. Checkout the [Gra
 ## Docker
 Run this Prometheus Exporter in a [Docker container](https://hub.docker.com/r/hunterlong/gethexporter/builds/)! Include your Geth server endpoint as `GETH` environment variable.
 ```bash
-docker run -it -d -p 9090:9090 \
-  -e "GETH="http://mygethserverhere.com:8545" \
-  hunterlong/gethexporter
+docker run -it -d -p 9090:9090 -e "GETH=http://mygethserverhere.com:8545" hunterlong/gethexporter
 ```
 
 ## Features
