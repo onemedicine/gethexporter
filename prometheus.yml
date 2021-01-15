@@ -22,7 +22,8 @@ scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: gethexporter
     static_configs:
-    - targets: ['IP:6061']
+    - targets:
+      - gethexporter:9090
 
 
 
